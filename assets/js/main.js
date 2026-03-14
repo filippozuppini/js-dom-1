@@ -10,3 +10,17 @@ Al click del bottone, la lampadina dovrà accendersi (dovremo quindi utilizzare
 l’immagine della lampadina accesa, sempre in allegato)
 
 */
+
+
+const img = document.querySelector('img');
+const button = document.querySelector('button');
+
+
+button.addEventListener('click', function(){
+
+    // console.log('bottone cliccato');
+
+    document.querySelector('img').src = "./assets/img/yellow_lamp.png"
+    
+
+})
