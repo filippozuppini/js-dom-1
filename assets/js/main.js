@@ -19,8 +19,16 @@ const button = document.querySelector('button');
 button.addEventListener('click', function(){
 
     // console.log('bottone cliccato');
-
-    document.querySelector('img').src = "./assets/img/yellow_lamp.png"
+    
+    if (button.innerHTML == 'Accendi') {
+        img.src = "./assets/img/yellow_lamp.png";
+        button.innerHTML = 'Spegni';
+        
+    } else if (button.innerHTML == 'Spegni') {
+        img.src = "./assets/img/white_lamp.png";
+        button.innerHTML = 'Accendi';
+    }
+    // document.querySelector('img').src = "./assets/img/yellow_lamp.png"
     
 
 })
